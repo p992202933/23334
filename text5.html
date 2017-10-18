@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        #menu li {
+            width: 120px;
+            height: 30px;
+
+            float: left;
+            margin-right: 2px;
+        }
+
+        #menu .mean-menu {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #00ff00;
+
+            color: red;
+            text-indent: 10px;
+            line-height: 30px;
+        }
+
+        #menu a:hover {
+            background: #cccccc;
+        }
+
+        .sub-menu {
+            overflow: hidden;
+            background: palevioletred;
+            display: none;
+        }
+
+        .sub-menu2 {
+            overflow: hidden;
+            background: pink;
+            display: none;
+        }
+
+        #menu li:hover .sub-menu {
+            display: block;
+        }
+
+        #menu li:hover .sub-menu2 {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <a href="" class="mean-menu">Link 1</a>
+        <ul class="sub-menu">
+            <li><a href="">233</a></li>
+            <li><a href="">233</a></li>
+            <li><a href="">233</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="" class="mean-menu">Link 2</a>
+        <ul class="sub-menu2">
+            <li><a href="">334</a></li>
+            <li><a href="">334</a></li>
+            <li><a href="">334</a></li>
+            <li><a href="">334</a></li>
+            <li><a href="">334</a></li>
+        </ul>
+    </li>
+    <li><a href="" class="mean-menu">Link 3</a></li>
+    <li><a href="" class="mean-menu">Link 4</a></li>
+</ul>
+</body>
+</html>
